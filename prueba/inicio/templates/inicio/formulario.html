@@ -1,0 +1,22 @@
+{% extends "inicio/encabezado.html" %}
+{% block titulo %} FORMULARIO {%endblock%}
+{% block contenido %}
+    <h2>Registrar<h2/>
+    <p>Matricula:<input type="text" name="matricula"</p>
+    <p>Nombre:<input type="text" name="nombre"</p>
+    <p>Carreras:
+    <select>
+    <option value="TIC">TIC</option>
+    <option value="DMI">DMI</option>
+    <select/>
+    <p>Turno:
+    <input type="radio" name="turno" value="matutino"> Matutino
+    <input type="radio" name="turno" value="vespertino"> Vespertino
+    </p>
+    </p>
+    
+
+
+    <p><input type="Button" name="enviar" value="Enviar"/></p>
+{%endblock%}
+
