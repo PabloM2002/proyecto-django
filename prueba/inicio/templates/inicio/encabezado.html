@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block titulo %}{% endblock %}</title>
+</head>
+<body>
+    <!--MENU-->
+    <a href="{%url 'Principal'%}">Home</a>
+    <a href="{%url 'Formulario'%}">Registrar</a>
+    <a href="{%url 'Contacto'%}">Contacto</a>
+
+    {% block contenido %} <!-- Template Tag-->
+    <!--block sirve para inidcar que colocaremos un bloque de contenido a traves de nuetsra 
+    variable content-->
+    {% endblock %}
+
+
+    
+</body>
+</html>
