@@ -1,5 +1,22 @@
 {% extends "inicio/encabezado.html" %}
-{% block titulo %} PRINCIPAL {%endblock%}
-{% block contenido %}
-    <h1>HOLA DJANGO</h1>
+
+{% block titulo %} PRINCIPAL {% endblock %}
+
+{%block imagen%}
+    {%load static%}
+    {%static 'inicio/imagenes/home.png'%}
+{%endblock%}
+
+{%block info%}
+    Principal<span>DSM</span>
+{%endblock%}
+{%block encabezado%}
+			<!--Encabezdo -->
+			<!-- cambio de prueba para git -->
+
+					<h3>Alumnos
+				    <small>Lista de Alumnos </small></h3>
+			<!-- /Encabezado-->
+			 {%endblock%}
+{% block contenido%}
 {%endblock%}
